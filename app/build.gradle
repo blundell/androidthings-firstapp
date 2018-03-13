@@ -1,12 +1,12 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 26
-    buildToolsVersion "26.0.0"
+    compileSdkVersion 27
+    buildToolsVersion "27.0.3"
     defaultConfig {
         applicationId "com.blundell.firstapp"
-        minSdkVersion 26
-        targetSdkVersion 26
+        minSdkVersion 27
+        targetSdkVersion 27
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
@@ -22,7 +22,7 @@ android {
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
 
-    provided 'com.google.android.things:androidthings:0.5-devpreview'
+    provided 'com.google.android.things:androidthings:+'
     // I use 0.4.1 please use the latest version from https://developer.android.com/things
 
     androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
